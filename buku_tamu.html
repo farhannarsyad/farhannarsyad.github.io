@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Buku Tamu</title>
+    <style>
+        body {
+            background-color: #0004089a;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+            background-color: #ff9100;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .nav-link:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav-link" href="index.html">HOME</a>
+        <a class="nav-link" href="about me.html">ABOUT ME</a>
+        <a class="nav-link" href="buku_tamu.html">BUKU TAMU</a>
+    </nav>
+
+    <h2>Form Buku Tamu</h2>
+    <form>
+        Nama Lengkap:<br>
+        <input type="text" name="nama_lengkap" required><br><br>
+        Jenis Kelamin:<br>
+        <input type="radio" name="jenis_kelamin" value="L"> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="P"> Perempuan <br><br>
+        Alamat Tinggal:<br>
+        <input type="text" name="alamat" required><br><br>
+        Email:<br>
+        <input type="text" name="email" required><br><br>
+        Aktif pada media sosial:<br>
+        <input type="checkbox" name="facebook" value="Ya"> Facebook
+        <input type="checkbox" name="twitter" value="Ya"> Twitter
+        <input type="checkbox" name="instagram" value="Ya"> Instagram
+        <input type="checkbox" name="path" value="Ya"> Path<br><br>
+        Mengetahui web ini dari:<br>
+        <select name="info">
+            <option value="web">Web</option>
+            <option value="Surat Kabar">Surat Kabar</option>
+            <option value="teman kerabat">Teman/Kerabat</option>
+            <option value="Browsing internet">Browsing internet</option>
+        </select><br><br>
+        Pesan: <br>
+        <textarea name="pesan" cols="40"></textarea><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
